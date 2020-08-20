@@ -74,6 +74,7 @@
   * ```
     git remote add origin git@github.com:your name/demo.git  
     git push -u origin master
+    后续提交只需要 git push
     ```
 
 #### 2.2:远程仓库-本地仓库:
