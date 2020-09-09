@@ -138,7 +138,7 @@
 
          如果报错fatal：‘XXX' is not a commit and a branch 'dev' cannot be created from it：
 
-         则续执行：`git fetch origin`  `git remote update origin --prune`
+         则需执行：`git fetch origin`  `git remote update origin --prune`
 
          然后再去创建分支
 
