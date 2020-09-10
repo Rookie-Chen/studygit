@@ -18,26 +18,22 @@
 
 #### 2.1:本地仓库-远程仓库:
 
-* ```
+* 基础命令
+  
+  ```
   $ mkdir learngit  // 新建目录
   $ cd learngit  // 进入目录
   $ pwd  // 查看当前文件目录
   $ git init // 初始化
   $ ls 查看当前分支所有文件
-```
-  
-* 新建需要上传的文件
-
-  * ```
-    $ git add readme.txt  // 先添加到本地仓库， 可一次性添加多个文件
-    $ git commit -m "wrote a readme file" // 提交 -m 后面为提交说明，必填,方便以后查询
-    $ git status  //查看状态和版本对比
-    $ git diff  //查看文件修改的详情
-    $ git log  // 查看所有的提交记录
-    $ git log --pretty=oneline // 简短显示提交记录
-    $ tyep file  // 命令行查看某个文件的具体内容 linux 里面是cat file
-    ```
-
+  $ git add readme.txt  // 先添加到本地仓库， 可一次性添加多个文件
+  $ git commit -m "wrote a readme file" // 提交 -m 后面为提交说明，必填,方便以后查询
+  $ git status  //查看状态和版本对比
+  $ git diff  //查看文件修改的详情
+  $ git log  // 查看所有的提交记录
+  $ git log --pretty=oneline // 简短显示提交记录
+  $ tyep file  // 命令行查看某个文件的具体内容 linux 里面是cat file
+  ```
 * 版本回退
 
   * git reset ： 回滚到某个版本, 后面的版本都会消失（一般用于错误提交，不想保留后续的提交），如果回滚到某个版本修改文件提交过后再滚到最新的版本，之前所修改的文件是无效的
@@ -65,7 +61,7 @@
   * 撤销删除：git restore   确定删除：git add/rm file
   * 如果已经执行commit的话需执行 git reset 
 
-  #### ***推送到远程仓库：
+  #### 推送到远程仓库：
 
   * 创建远程仓库
 
@@ -191,6 +187,8 @@
    	git remote add github ssh地址
    关联gitee:
    	git remote add gitee ssh地址
+   
+   推送： git push github/gitee master/<name>
    ```
 
 ### 6.可视化工具
